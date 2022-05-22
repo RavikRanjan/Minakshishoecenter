@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid gray;
+    box-shadow:  2px 0px 5px gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+.menu a:last-child{
+    background: black;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective: 2000px;
+}
+.left{
+    flex-basis: 50%;
+    animation: animate 3s linear infinite;
+    padding-top: 25px;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.right{
+    flex-basis: 50%;
+    max-width: 400px;
+    margin-left: 100px;
+}
+.right h1{
+    font-size: 50px;
+}
+.right p{
+    font-size: 25px;
+    margin: 20px 0px; 
+}
+button{
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-bottom: 20px; 
+}
+#featured{
+    padding: 50px 0px;
+    font-size: 50px;
+    text-align: center;
+}
+#featured h1{
+    color: blue;
+    padding-bottom: 30px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+    justify-content: center;
+}
+.wrapper> div{
+    border: 1px solid gray;
+    position: relative;
+
+}
+.wrapper> div img{
+    width: 100%;
+    overflow: hidden;
+}
+.box1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.Price{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+.wrapper> div img:hover{
+    transform: scale(1.2);
+    transition: 0.4s linear;
+}
+#man{
+    padding: 80px 0px;
+}
+
+.man-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.man-box{
+    flex-basis: 15%;
+    box-shadow: 2px 3px 5px gray;
+    padding: 10px;
+    text-align: center;
+}
+.man-box img{
+    width: 100%;
+}
+.man-box h2{
+    margin: 20px 0px;
+}
+.man-box h3{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.man-box:hover{
+    transform: translatey(-20px);
+    transition: 0.4s ease;
+}
+footer{
+    background: rgb(44, 42, 42);
+    height: auto;
+    width: 98.8vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    min-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 1;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color 0.4s ease; 
+}
+.socials a:hover i{
+    color: rgb(255, 0, 0);
+    padding-left: 8px;
+}
+.socials a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+.footer-bottom{
+    background: rgb(11, 11, 11);
+    width: 98.8vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    perspective: 1000px;
+}
+.cleft{
+    flex-basis: 50%;
+}
+.title{
+    text-align: center;
+    color: bllue;
+}
+.our
+{
+    font-weight: bold;
+    color: red;
+    padding-left: 80px;
+}
+.word{
+    color: blue;
+}
+.contact
+{
+    font-weight: bold;
+    color: brown;
+}
+.maa
+{
+    font-weight: bold;
+    color: rgb(238, 20, 238);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
